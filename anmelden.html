@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="images/x-icon" href="images/fluffy.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <title>Anmeldung</title>
+
+        <style>
+            *{
+                padding:0;
+                border:0;
+                margin:0;
+            }
+            #logo{
+                height:100%;
+                width:100%;
+                display:flex;
+                justify-content: center;
+                margin-top: -100px;
+                margin-bottom: -100px;
+
+
+            }
+
+            .form-box{
+                width:500px;
+                background: rgba(0,0,0,0.8);
+                margin:12px auto;
+                padding: 50px 0;
+                color: #fff;
+                box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+            }
+            h1{
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .input-box{
+                margin: 31px auto;
+                width: 80%;
+                border-bottom: 1px solid #fff;
+                padding-top:10px;
+                padding-bottom: 5px;
+            }
+
+            .input-box input{
+                width: 90%;
+                border:none;
+                outline:none;
+                background: transparent;
+                color:#fff;
+            }
+            body{
+                background-image: url("images/Lovepik.jpg");
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                
+            }
+            .container{
+                display: flex;
+                width:100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .fa{
+                margin-right: 10px;
+            }
+            .eye{
+                position: absolute;
+            }
+            #hide1{
+                display:none;
+            }
+            .login-button{
+                margin: 40px auto 20px;
+                width: 80%;
+                display:block;
+                outline:none;
+                padding: 10px 0;
+                border: 1px solid #fff;
+                cursor: pointer;
+                background: transparent;
+                color:#fff;
+                font-size: 16px;
+            }
+            footer{
+                width:100%;
+                background: rgba(0,0,0,0.8);
+                box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+                color: #fff;
+                height:15vh;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+    
+            }
+
+            .footer-box li:hover a{
+                color:#ffc267;
+                text-decoration: underline;
+            }
+
+            .footer-box li a{
+                color: #fff;
+                text-decoration: none;
+                
+
+            }
+            .footer-box ul{
+                list-style:none;
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+            }
+            
+            .footer-box{
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+            }
+            .container2{
+                display: flex;
+                
+                justify-content: space-evenly;
+
+            }
+            .copyright{
+                text-decoration: none;
+                list-style: none;
+                color: #fff;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                
+            }
+
+            .copyright::before{
+                content: '\00A9';
+                margin-right: 10px;
+            }
+
+            @media screen and (max-height: 900px){
+                .input-box{
+                    margin: 15px auto;
+                    padding-top:10px;
+                    padding-bottom: 2px;
+
+                }
+                .login-button{
+                margin: 20px auto 10px;
+                font-size: 14px;
+            }
+        }
+
+
+            
+        </style>
+    </head>
+
+
+    <body>
+       <div class="container"> 
+            <div id="logo"><img src="images/fluffy.png" height="400px" width="400px"></div>
+            <div class ="form-box">
+                <h1>Login Here</h1>
+                <div class ="input-box">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <input type="email" placeholder="Email/ Username">
+                </div>
+                <div class ="input-box">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                    <input type="password" placeholder="Password" id="myInput">
+                    <span class="eye" onclick="myFunction()">
+                        <i id="hide1" class="fa fa-eye" aria-hidden="true"></i>
+                        <i id="hide2" class="fa fa-eye-slash" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <button type="button" class ="login-button">LOGIN</button>
+                <button type="button" class ="login-button" onclick="location.href='regis.html'">Create your account</button>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-box">
+                <ul class ="container2">
+                    <li><a href="#">Privacy Notice</li>
+                    <li><a href="help.html">Help</li>
+                    <li><a href="#">Cookies Notice</li>
+                    <li><a href="#">Kontakt</li>
+                </ul>
+            </div>
+            <div class = "copyright"> SupperFluffy 2024, SuperFluffy.com, Allright reserved</div>
+
+        </footer>
+        
+        
+
+
+
+
+        <script>
+            function myFunction(){
+                var x = document.getElementById("myInput");
+                var y = document.getElementById("hide1");
+                var z = document.getElementById("hide2");
+
+                if(x.type === 'password')
+                {
+                    x.type = "text";
+                    y.style.display = "block";
+                    z.style.display = "none";
+                }else{
+                    x.type = "password";
+                    y.style.display = "none";
+                    z.style.display = "block";
+                }
+            }
+        </script>
+
+    </body>
+
+
+</html>
