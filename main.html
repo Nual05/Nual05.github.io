@@ -9,10 +9,42 @@
 
 
         <style>
-            @media screen and (max-width: 450px){
-                .katagorie{
+            @media screen and (max-width: 1000px){
+              
+
+
+                    .katagorie{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .list-product{
+                        display:grid;
+                        grid-template-columns: repeat(2,1fr);
+                    }
                     
-                }
+                    input[type="suche"]{
+                        width: 90%;
+                    }
+
+                    #katagorie{
+                        display:none;
+                    }
+
+                    .cartTab{
+                        left:0;
+                    }
+                    .hidden {
+                        display: none;
+                    }
+
+                    .container2 a{
+                        margin-right: 10px;
+                    }
+
+                    
+  
+
+                   
             }
         </style>
   
@@ -23,38 +55,38 @@
         <header>
             <div class = "katagorie">
                 <div id= "kata1"><img src="images/fluffy.png" height="115px" width="115px"></div>
-                <li class= "kata">Kategorien
+                <li class= "kata" id="katagorie">Kategorien
                     <ul class="sub-menu">
                         <li>Logo
                             <ul class="sub-menu">
                                 <li>Produkt 1
                                     <ul class="sub-menu">
-                                        <div class ="box1"><img src="images/fluffy.png" height="200px" width="200px"></div> 
+                                        <div class ="box1"><img src="images/fluffy.png" height="200px" width="200px" alt="graffti"></div> 
                                     </ul>
                                 </li>
                                 <li>Produkt 2
                                     <ul class="sub-menu">
-                                        <div class ="box1"><img src="images/logo2.png" height="200px" width="200px"></div> 
+                                        <div class ="box1"><img src="images/logo2.png" height="200px" width="200px" alt="graffti"></div> 
                                     </ul>
                                 </li>
                                 <li>Produkt 3
                                     <ul class="sub-menu">
-                                        <div class ="box1"><img src="images/logo3.png" height="200px" width="200px"></div> 
+                                        <div class ="box1"><img src="images/logo3.png" height="200px" width="200px" alt="graffti"></div> 
                                     </ul>
                                 </li>
                                 <li>Produkt 4
                                     <ul class="sub-menu">
-                                        <div class ="box1"><img src="images/logo4.png" height="200px" width="200px"></div> 
+                                        <div class ="box1"><img src="images/logo4.png" height="200px" width="200px" alt="graffti"></div> 
                                     </ul>
                                 </li>
                                 <li>Produkt 5
                                     <ul class="sub-menu">
-                                        <div class ="box1"><img src="images/logo5.png" height="200px" width="200px"></div> 
+                                        <div class ="box1"><img src="images/logo5.png" height="200px" width="200px" alt="graffti"></div> 
                                     </ul>
                                 </li>
                                 <li>Produkt 6
                                     <ul class="sub-menu">
-                                        <div class ="box1"><img src="images/logo6.png" height="200px" width="200px"></div> 
+                                        <div class ="box1"><img src="images/logo6.png" height="200px" width="200px" alt="graffti"></div> 
                                     </ul>
                                 </li>
                             </ul>
@@ -63,32 +95,32 @@
                             <ul class="sub-menu">
                                 <li>Produkt 1
                                     <ul class="sub-menu">
-                                        <div class ="box1"><img src="images/graf1.jpg" height="220px" width="180px"></div> 
+                                        <div class ="box1"><img src="images/graf1.jpg" height="220px" width="180px" alt="graffti"></div> 
                                     </ul>
                                 </li>
                                 <li>Produkt 2
                                     <ul class="sub-menu">
-                                        <div class ="box1"><img src="images/graf2.jpg"height="200px" width="180px"></div> 
+                                        <div class ="box1"><img src="images/graf2.jpg"height="200px" width="180px" alt="graffti"></div> 
                                     </ul>
                                 </li>
                                 <li>Produkt 3
                                     <ul class="sub-menu">
-                                        <div class ="box1"><img src="images/graf3.jpg" height="200px" width="150px"></div> 
+                                        <div class ="box1"><img src="images/graf3.jpg" height="200px" width="150px" alt="graffti"></div> 
                                     </ul>
                                 </li>
                                 <li>Produkt 4
                                     <ul class="sub-menu">
-                                        <div class ="box1"><img src="images/graf4.jpg" height="200px" width="160px"></div> 
+                                        <div class ="box1"><img src="images/graf4.jpg" height="200px" width="160px" alt="graffti"></div> 
                                     </ul>
                                 </li>
                                 <li>Produkt 5
                                     <ul class="sub-menu">
-                                        <div class ="box1"><img src="images/graf5.jpg" height="200px" width="160px"></div> 
+                                        <div class ="box1"><img src="images/graf5.jpg" height="200px" width="160px" alt="graffti"></div> 
                                     </ul>
                                 </li>
                                 <li>Produkt 6
                                     <ul class="sub-menu">
-                                        <div class ="box1"><img src="images/graf6.jpg" height="200px" width="170px"></div> 
+                                        <div class ="box1"><img src="images/graf6.jpg" height="200px" width="170px" alt="graffti"></div> 
                                     </ul>
                                 </li>
                             </ul>
@@ -146,15 +178,15 @@
 
                 <div class= "kata" id="langue"><img src="images/langue.jpg" height="40px" widht="40px"> Langue
                     <ul class = "langue-menu">
-                        <li><img src="https://flagsapi.com/VN/flat/64.png">Vietnam</li>
-                        <li><img src="https://flagsapi.com/DE/flat/64.png">Deutsch</li>
-                        <li><img src="https://flagsapi.com/GB/flat/64.png">English</li>
+                        <li><img src="https://flagsapi.com/VN/flat/64.png" alt="langue">Vietnam</li>
+                        <li><img src="https://flagsapi.com/DE/flat/64.png" alt="langue">Deutsch</li>
+                        <li><img src="https://flagsapi.com/GB/flat/64.png" alt="langue">English</li>
                     </ul>
                 </div>
                 
                 <div class= "kata" id ="cart" ><img src="images/cart.png" height="40px" widht="40px">
                     <a href="#"> Cart 0</a>
-                    <div class="cartTab">
+                    <div class="cartTab" id="cartlist">
                         <h1>Shopping Cart</h1>
                         <div class="listCart">
                             <div class="item">
@@ -231,7 +263,7 @@
                             </div>
                         </div>
                         <div class ="btn">
-                            <button class = "close">CLOSE</button>
+                            <button class = "close"  onclick="hideElement()">CLOSE</button>
                             <button class = "checkOut">CHECK OUT</button>
                         </div>
         
@@ -258,73 +290,73 @@
                 </div>
                 <div class="list-product">
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
@@ -345,73 +377,73 @@
                 </div>
                 <div class="list-product">
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
@@ -432,73 +464,73 @@
                 </div>
                 <div class="list-product">
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
                     </div>
                     <div class = "item">
-                        <img src="images/pro.png" height="250px" width="250px">
+                        <img src="images/pro.png" height="250px" width="250px" alt="produkt">
                         <h2>NAME PRODUCT</h2>
                         <div class ="price">200€</div>
                         <button class="addCart">Add To Cart</button>
@@ -528,6 +560,13 @@
 
 
 
+
+        <script>
+            function hideElement() {
+                var element = document.getElementById("cartlist");
+                element.classList.add("hidden");
+            }
+        </script>
 
 
 
